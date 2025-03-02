@@ -1,3 +1,5 @@
+// Car Class
+
 class Car {
     constructor(make, model, year, color, ownershipStatus) {
         this.make = make;
@@ -16,14 +18,16 @@ console.log(Car1);
 console.log(Car2);
 console.log(Car3);
 
+
+// Grocery Item Class
 class GroceryItem {
     constructor(name, price) {
         this.name = name;
         this.price = price;
     }
 
-    calculateTotal(total) {
-        total = GroceryItem.this.price++
+    calculateTotal(secondItem) {
+        return this.price + secondItem.price
     }
 
 }
@@ -39,4 +43,17 @@ const GroceryItem6 = new GroceryItem("DragonBallZBattleOfGods", 20.00);
 
 console.log(GroceryItem1, GroceryItem2, GroceryItem3, GroceryItem4, GroceryItem5, GroceryItem6)
 
-GroceryItem1.calculateTotal()
+console.log(GroceryItem1.calculateTotal(GroceryItem2, GroceryItem3, GroceryItem4, GroceryItem5, GroceryItem6))
+
+
+// Book Inventory Class
+class BookInventory {
+    constructor(name, genre) {
+        this.name = name;
+        this.genre = genre;
+    }
+
+    static calculateBooks(bookTotal) {
+        return bookTotal.reduce(() => )
+    }
+}
